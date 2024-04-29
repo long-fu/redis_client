@@ -1,0 +1,14 @@
+prefix=/media/haoshuai/T7/x86_3rdparty/ffmpeg
+exec_prefix=${prefix}
+libdir=/media/haoshuai/T7/x86_3rdparty/ffmpeg/lib
+includedir=/media/haoshuai/T7/x86_3rdparty/ffmpeg/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 55.5.100
+Requires: 
+Requires.private: libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: -lm
+Cflags: -I${includedir}

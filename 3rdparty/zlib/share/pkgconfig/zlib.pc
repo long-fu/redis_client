@@ -1,0 +1,13 @@
+prefix=/media/haoshuai/T7/x86_3rdparty/zlib
+exec_prefix=/media/haoshuai/T7/x86_3rdparty/zlib
+libdir=/media/haoshuai/T7/x86_3rdparty/zlib/lib
+sharedlibdir=/media/haoshuai/T7/x86_3rdparty/zlib/lib
+includedir=/media/haoshuai/T7/x86_3rdparty/zlib/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.3
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

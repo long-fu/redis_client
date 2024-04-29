@@ -1,0 +1,14 @@
+prefix=/media/haoshuai/T7/x86_3rdparty/ffmpeg
+exec_prefix=${prefix}
+libdir=/media/haoshuai/T7/x86_3rdparty/ffmpeg/lib
+includedir=/media/haoshuai/T7/x86_3rdparty/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lva-drm -lva -lva-x11 -lva -lvdpau -lX11 -lm -lva -lXv -lX11 -lXext -ldl
+Cflags: -I${includedir}
